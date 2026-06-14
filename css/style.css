@@ -1,0 +1,244 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+    line-height: 1.8;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 导航栏 */
+header {
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 28px;
+    display: inline-block;
+}
+
+nav {
+    display: inline-block;
+    float: right;
+    margin-top: 8px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* 首页横幅 */
+.hero {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* 通用区块 */
+.section {
+    padding: 60px 0;
+}
+
+.bg-light {
+    background-color: #fff;
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+/* 关于我 */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* 博客文章 */
+.blog-post {
+    margin-bottom: 50px;
+    padding: 30px;
+    border-radius: 8px;
+    background: #f8f9fa;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.blog-post:hover {
+    transform: translateY(-3px);
+}
+
+.blog-post h3 {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.post-date {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.blog-post p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* 图片容器 */
+.image-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.blog-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    border: 1px solid #e0e0e0;
+}
+
+.image-caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #777;
+    font-style: italic;
+}
+
+.read-more {
+    display: inline-block;
+    background: #3498db;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.read-more:hover {
+    background: #2980b9;
+}
+
+/* 联系方式 */
+.contact-list {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.contact-list a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+/* 页脚 */
+footer {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 14px;
+}
+
+/* 代码样式 */
+code {
+    background: #eee;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #e74c3c;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    header h1 {
+        display: block;
+        text-align: center;
+    }
+
+    nav {
+        display: block;
+        float: none;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+}

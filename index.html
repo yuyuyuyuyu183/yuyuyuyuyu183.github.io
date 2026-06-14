@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人博客</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <h1>🌐 我的个人博客</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#about">关于我</a></li>
+                    <li><a href="#blog">博客文章</a></li>
+                    <li><a href="#contact">联系方式</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 首页横幅 -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>欢迎来到我的博客！</h2>
+            <p>这里记录了我的学习笔记、技术分享和生活感悟。</p>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>📖 关于我</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>你好！我是一名热爱技术和编程的学生。</p>
+                    <p>我目前正在学习前端开发、后端开发和云计算技术。</p>
+                    <p>这个博客是我利用 GitHub Pages 搭建的个人网站，记录了我在技术学习过程中的收获与心得。</p>
+                    <p>希望通过这个博客能够与更多志同道合的朋友交流学习！</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 博客文章 -->
+    <section id="blog" class="section bg-light">
+        <div class="container">
+            <h2>📝 博客文章</h2>
+
+            <!-- 文章1 - 展示相对路径图片 -->
+            <article class="blog-post">
+                <h3>我的第一篇博客：GitHub Pages 搭建教程</h3>
+                <p class="post-date">发布于：2026年6月14日</p>
+                <p>GitHub Pages 是一个免费的静态网页托管服务，可以用来托管个人博客、项目文档等。本篇文章将介绍如何使用 GitHub Pages 搭建个人博客。</p>
+                <p>以下是博客的截图展示：</p>
+                <!-- ★ 相对路径图片示例 ★ -->
+                <!-- 截图注释：此处显示博客页面截图，使用相对路径引用（./image/1.png） -->
+                <div class="image-container">
+                    <img src="image/1.png" alt="博客页面截图" class="blog-image">
+                    <p class="image-caption">图1：博客页面截图（相对路径引用）</p>
+                </div>
+                <p>通过上述图片可以看到，使用相对路径引用图片时，路径是相对于当前 HTML 文件所在位置的。在本例中，图片存放在 <code>image/</code> 目录下，通过 <code>image/1.png</code> 即可引用。</p>
+                <a href="#" class="read-more">阅读全文 →</a>
+            </article>
+
+            <!-- 文章2 - 展示绝对路径图片 -->
+            <article class="blog-post">
+                <h3>Web开发中的路径概念解析</h3>
+                <p class="post-date">发布于：2026年6月14日</p>
+                <p>在 Web 开发中，路径引用是非常基础且重要的概念。本文将通过实例详细讲解相对路径和绝对路径的区别与使用场景。</p>
+                <p>绝对路径通常以协议开头（如 https://），指向网络上的一个固定资源位置：</p>
+                <!-- ★ 绝对路径图片示例 ★ -->
+                <!-- 截图注释：此处展示一张通过绝对路径引用的图片，URL为GitHub上的公共图片资源 -->
+                <div class="image-container">
+                    <img src="https://octodex.github.com/images/Octocat.png" alt="GitHub吉祥物Octocat" class="blog-image">
+                    <p class="image-caption">图2：GitHub吉祥物 Octocat（绝对路径引用）</p>
+                </div>
+                <p>绝对路径的优点是不管当前页面在哪里，都能准确地定位到资源。缺点是如果资源被移动或删除，链接就会失效。</p>
+                <a href="#" class="read-more">阅读全文 →</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>📫 联系方式</h2>
+            <p>如果你有任何问题或建议，欢迎通过以下方式联系我：</p>
+            <ul class="contact-list">
+                <li>📧 邮箱：<a href="mailto:example@example.com">example@example.com</a></li>
+                <li>🐙 GitHub：<a href="https://github.com" target="_blank">https://github.com</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <p>© 2026 我的个人博客 | 使用 GitHub Pages 托管</p>
+        </div>
+    </footer>
+</body>
+</html>
